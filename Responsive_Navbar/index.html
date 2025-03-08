@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <img src="dinosaur-svgrepo-com.svg" alt="logo" class="logo" />
+      <ul>
+        <li><a href="#" class="hov1">Home</a></li>
+        <li><a href="#" class="hov1">Services</a></li>
+        <li><a href="#" class="hov1">About</a></li>
+        <li><a href="#" class="hov1">Contact</a></li>
+        <li>
+          <a href="#" class="bars" onclick="showsidebar()"
+            ><img src="bars-svgrepo-com.svg" alt=""
+          /></a>
+        </li>
+      </ul>
+    </header>
+
+    <header class="sidebar">
+      <a href="#" onclick="closesidebar()" class="cross"
+        ><img src="cross-small-svgrepo-com.svg" alt=""
+      /></a>
+      <ul>
+        <li><a href="#" class="hov2">Home</a></li>
+        <li><a href="#" class="hov2">Services</a></li>
+        <li><a href="#" class="hov2">About</a></li>
+        <li><a href="#" class="hov2">Contact</a></li>
+      </ul>
+    </header>
+
+    <script>
+      function showsidebar() {
+        const side = document.querySelector(".sidebar");
+        side.style.display = "flex";
+      }
+
+      function closesidebar() {
+        const side = document.querySelector(".sidebar");
+        side.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

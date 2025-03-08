@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Rozha+One&family=Shadows+Into+Light&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rozha One", serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(circles-2891368_1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  height: 75px;
+  cursor: pointer;
+}
+
+.navbar {
+  height: 80px;
+  margin: 5px 10px 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fcfaee;
+  border: 0;
+  border-radius: 25px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar li {
+  padding: 0 30px;
+  color: #384b70;
+}
+
+.navbar li a {
+  color: #384b70;
+}
+
+.hov1:hover {
+  background-color: #507687;
+  color: white; /* Ensure text is visible */
+  padding: 2.5px 5px; /* Optional: Adds better hover effect */
+  border-radius: 5px; /* Optional: Rounded edges */
+}
+
+.bars:hover {
+  filter: brightness(0) saturate(100%) invert(43%) sepia(49%) saturate(292%)
+    hue-rotate(153deg) brightness(91%) contrast(90%);
+  opacity: 0.5;
+}
+
+.bars img {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+
+  filter: brightness(0) saturate(100%) invert(27%) sepia(50%) saturate(445%)
+    hue-rotate(181deg) brightness(94%) contrast(95%);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  background-color: #fcfaee30;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.sidebar li {
+  width: 100%;
+  padding: 25px 10px;
+}
+
+.sidebar li a {
+  color: #384b70;
+}
+
+.bars {
+  display: none;
+}
+
+.sidebar ul li a {
+  display: block; /* Ensures the link fills the full li */
+  padding: 15px 20px; /* Adds spacing */
+  width: 80%; /* Makes the a fill the sidebar */
+}
+
+.sidebar ul li a:hover {
+  background-color: #507687;
+  color: white;
+  border-radius: 5px; /* Optional */
+}
+
+.cross {
+  position: relative;
+  left: 8px;
+  filter: brightness(0) saturate(100%) invert(43%) sepia(49%) saturate(292%)
+    hue-rotate(153deg) brightness(91%) contrast(90%);
+}
+
+.cross:hover {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(50%) saturate(445%)
+    hue-rotate(181deg) brightness(94%) contrast(95%);
+
+  opacity: 0.5;
+}
+
+@media (max-width: 800px) {
+  .hov1 {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.logo:hover {
+  height: 78px;
+  background-color: #507687;
+  padding: 0;
+
+  border-radius: 100px;
+}
