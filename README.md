@@ -23,6 +23,6 @@ This repository serves as my personal **web development playground**, where I pr
 
 ---
 
-🚀 **From pixels to pages – one project at a time!**  
+🚀 **Fueling the Journey to Destiny!**  
 
 
